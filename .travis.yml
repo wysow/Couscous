@@ -19,3 +19,6 @@ deploy:
     tags: true
     all_branches: true
     repo: wysow/Couscous
+    php: 5.4
+after_deploy:
+  - bin/couscous travis-auto-deploy --phar-only
